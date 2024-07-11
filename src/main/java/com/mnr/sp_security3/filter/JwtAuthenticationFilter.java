@@ -1,7 +1,7 @@
 package com.mnr.sp_security3.filter;
 
 import com.mnr.sp_security3.service.JwtService;
-import com.mnr.sp_security3.service.UserDetailsImp;
+import com.mnr.sp_security3.service.UserDetailsServiceImpl;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -22,9 +22,9 @@ import java.io.IOException;
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
     private final JwtService jwtService;
-    private final UserDetailsImp userDetailsService;
+    private final UserDetailsServiceImpl userDetailsService;
 
-    public JwtAuthenticationFilter(JwtService jwtService, UserDetailsImp userDetails) {
+    public JwtAuthenticationFilter(JwtService jwtService, UserDetailsServiceImpl userDetails) {
         this.jwtService = jwtService;
         this.userDetailsService = userDetails;
     }

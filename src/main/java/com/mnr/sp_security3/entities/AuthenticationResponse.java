@@ -1,2 +1,13 @@
-package com.mnr.sp_security3.entities;public class AuthenticationResponse {
+package com.mnr.sp_security3.entities;
+
+public class AuthenticationResponse {
+
+    private String token;
+    public AuthenticationResponse(String token) {
+        this.token=token;
+    }
+
+    public String getToken() {
+        return token;
+    }
 }
