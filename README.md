@@ -20,3 +20,9 @@ spring boot security version 3.2.1
     
 # create an Entity User (implementing UserDetails) and enumeration Role(USER, ADMIN)
 # create repository User
+
+# create SecurityConfig
+# create service : AuthenticationServie + jwtService + UserDetailServieImpl
+# create jwtAuthenticationFilter
+# create controller
+
